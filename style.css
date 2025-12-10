@@ -1,0 +1,22 @@
+body {margin:0; font-family: Arial; background:#1f1f1f; color:white;}
+.hidden {display:none;}
+#container {display:flex; height:100vh;}
+#sidebar {width:240px; padding:15px; display:flex; flex-direction:column; gap:15px;}
+#sidebar button {margin:4px 0; padding:8px; border-radius:6px; border:none; cursor:pointer;}
+.crown {color:gold;}
+#chat {flex:1; display:flex; flex-direction:column; padding:10px;}
+#messages {flex:1; overflow-y:auto; margin-bottom:8px;}
+#input-area {display:flex; gap:5px;}
+#input-area input {flex:1; padding:8px; border-radius:5px; border:none;}
+button {background:#5865f2; color:white;}
+button:hover {opacity:0.8;}
+#videos {display:flex; flex-wrap:wrap; gap:5px; margin-top:10px;}
+video {width:45%; border-radius:8px; background:#000;}
+.avatar {width:32px; height:32px; border-radius:50%; margin-right:8px;}
+.msg {display:flex; align-items:center; margin-bottom:6px;}
+.login {position:fixed; inset:0; background:#111; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:10px;}
+.theme-discord {--bg:#2f3136; --bg-secondary:#202225; --text:white; --accent:#5865f2;}
+.theme-neon {--bg:#0b0f0b; --bg-secondary:#060606; --text:#00ff88; --accent:#00ff55;}
+.theme-violet {--bg:#1a1423; --bg-secondary:#241b2f; --text:#d3b8ff; --accent:#8a2be2;}
+.theme-minimal {--bg:white; --bg-secondary:#f3f3f3; --text:#333; --accent:#000;}
+@media (max-width:768px){#container {flex-direction:column;} #sidebar {width:100%; flex-direction:row; overflow-x:auto;}}
