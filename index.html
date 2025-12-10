@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Just Call</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="app.js"></script>
+</head>
+<body class="theme-discord">
+
+<div id="login-screen" class="login">
+    <h2>Login</h2>
+    <input id="login-name" placeholder="Pseudo">
+    <button onclick="loginUser()">Enter</button>
+</div>
+
+<div id="container" class="hidden">
+    <div id="sidebar">
+        <h2>Just Call <span class="crown">👑</span></h2>
+        <div id="channels">
+            <button onclick="joinChannel('general')"># general</button>
+            <button onclick="joinChannel('gaming')"># gaming</button>
+            <button onclick="joinChannel('dev')"># dev</button>
+        </div>
+        <div id="themes">
+            <p>Theme :</p>
+            <button onclick="setTheme('discord')">Discord</button>
+            <button onclick="setTheme('neon')">Neon</button>
+            <button onclick="setTheme('violet')">Violet</button>
+            <button onclick="setTheme('minimal')">Minimal</button>
+        </div>
+    </div>
+
+    <div id="chat">
+        <div id="messages"></div>
+        <div id="input-area">
+            <input id="msg" placeholder="Message…">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+        <div id="videos">
+            <video id="localVideo" autoplay muted></video>
+        </div>
+        <button onclick="startCall()">Start Call</button>
+        <button onclick="leaveCall()">Leave Call</button>
+    </div>
+
+    <div id="admin-panel" class="hidden">
+        <h3>Admin Panel</h3>
+        <button onclick="adminBan()">Ban User</button>
+        <button onclick="adminKick()">Kick User</button>
+        <button onclick="adminMute()">Mute User</button>
+    </div>
+</div>
+
+</body>
+</html>
